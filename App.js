@@ -1,20 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-import React, { Component } from 'react';
-import {Text, View} from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import PresentationalComponent from './PresentationalComponent'
 
-export default class HelloWorldApp extends Component{
-    render(){
+export default class App extends React.Component {
+    state = {
+        myState: 'This is my state'
+    }
+
+    render() {
         return (
-            <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
-                <Text>Hello, Wolrd!</Text>
+            <View>
+                <PresentationalComponent myState = {this.state.myState}/>
             </View>
         );
     }
 }
-
