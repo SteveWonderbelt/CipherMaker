@@ -1,11 +1,9 @@
 import React from 'react';
-import Inputs from './inputs.js'
-import ScrollViewExample from "./ScrollView";
+import ImagesExample from './image_example.js'
 
 const App = () => {
     return (
-        <ScrollViewExample />
-
+        <ImagesExample />
     )
 }
 export default App
