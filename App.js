@@ -1,9 +1,26 @@
-import React from 'react';
-import HttpExample from './http_example.js'
+import React from 'react'
+import  {View, TouchableNativeFeedback, Text, StyleSheet} from 'react-native'
 
-const App = () => {
-    return (
-        <HttpExample />
+const Home = (props)=> {
+    return(
+        <View style = {styles.container}>
+            <TouchableNativeFeedback>
+                <Text style = {styles.text}>
+                    Button
+                </Text>
+            </TouchableNativeFeedback>
+        </View>
     )
 }
-export default App
+export default Home
+const styles  = StyleSheet.create({
+    container:{
+        alignItems:'center',
+    },
+    text:{
+        borderWidth: 1,
+        padding: 25,
+        borderColor: 'black',
+        backgroundColor:'red'
+    }
+})
