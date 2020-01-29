@@ -3,39 +3,29 @@ import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-nativ
 
 class Inputs extends Component {
     state = {
-        email: '',
-        password: ''
+        plaintext: ''
     }
-    handleEmail = (text) => {
-        this.setState({ email: text })
+    handlePlainText = (text) => {
+        this.setState({ plaintext: text })
     }
-    handlePassword = (text) => {
-        this.setState({ password: text })
-    }
-    login = (email, pass) => {
-        alert('email: ' + email + ' password: ' + pass)
+    login = (plain ) => {
+        alert('plaintext: ' + plain)
     }
     render() {
         return (
             <View style = {styles.container}>
-                <TextInput style = {styles.input}
-                           underlineColorAndroid = "transparent"
-                           placeholder = "Email"
-                           placeholderTextColor = "#9a73ef"
-                           autoCapitalize = "none"
-                           onChangeText = {this.handleEmail}/>
 
                 <TextInput style = {styles.input}
                            underlineColorAndroid = "transparent"
-                           placeholder = "Password"
+                           placeholder = "Plaintext"
                            placeholderTextColor = "#9a73ef"
                            autoCapitalize = "none"
-                           onChangeText = {this.handlePassword}/>
+                           onChangeText = {this.handlePlainText}/>
 
                 <TouchableOpacity
                     style = {styles.submitButton}
                     onPress = {
-                        () => this.login(this.state.email, this.state.password)
+                        () => this.login(this.state.plaintext)
                     }>
                     <Text style = {styles.submitButtonText}> Submit </Text>
                 </TouchableOpacity>
