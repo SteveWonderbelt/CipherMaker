@@ -4,13 +4,13 @@ import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-nativ
 class Inputs extends Component {
     state = {
         plaintext: ''
-    }
+    };
     handlePlainText = (text) => {
         this.setState({ plaintext: text })
-    }
+    };
     login = (plain ) => {
         alert('plaintext: ' + plain)
-    }
+    };
     render() {
         return (
             <View style = {styles.container}>
@@ -54,4 +54,4 @@ const styles = StyleSheet.create({
     submitButtonText:{
         color: 'white'
     }
-})
+});

@@ -12,7 +12,7 @@ const PresentationalComponent = (props) => {
             </Text>
         </View>
     )
-}
+};
 export default PresentationalComponent
 
 const styles = StyleSheet.create({
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
         fontWeight : 'bold',
         fontSize: 20
     }
-})
+});

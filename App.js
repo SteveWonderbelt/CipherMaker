@@ -5,5 +5,5 @@ const App = () => {
     return (
         <Inputs />
     )
-}
+};
 export default App
